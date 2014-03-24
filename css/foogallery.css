@@ -1,0 +1,57 @@
+﻿.fgl-instance {
+  position: relative; /* As tiles are positioned absolutely within the container we need to make this relative. */
+  margin: 0 auto;
+  /* Note no width or height is set as the script figures out how much space it has to work with by inspecting the direct parent. */
+}
+.fgl-temp {
+	position: absolute;
+	top: -10000px;
+	left: -10000px;
+	visibility: hidden;
+}
+.fgl-tile {
+	z-index: 9994;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0);
+	-moz-box-shadow:    0 0 6px rgba(0, 0, 0, 0);
+	box-shadow:         0 0 6px rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+	border: solid 1px #c5c5c5;
+	background-color: #FFF;
+	padding: 14px;
+	margin: 12px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.fgl-tile:hover {
+  z-index: 9995;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    0 0 6px rgba(0, 0, 0, 0.4);
+	box-shadow:         0 0 6px rgba(0, 0, 0, 0.4);
+}
+.fgl-tile > img {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	opacity: 0.8;
+}
+.fgl-tile:hover > img {
+	opacity: 1;
+}
+.fgl-tile-animate {
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition:    all 0.8s ease-in-out;
+  transition:         all 0.8s ease-in-out;
+}
+.fgl-tile-animate > img {
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}

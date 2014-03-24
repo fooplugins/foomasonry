@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>FooGallery Test</title>
+
+    <link href="css/foogallery.css" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			/* This class is here as this container is whatever parent element the gallery is in. The gallery will center itself to this element. */
+			.gallery-container {
+				width: 70%;
+				background-color: #c5c5c5;
+				margin: 0 auto;
+				height: 700px;
+				overflow: hidden;
+				overflow-y: scroll;
+			}
+		</style>
+
+		<script src="http://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="js/foogallery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('.fgl-instance').foogallery({ columnWidth: 200 });
+      });
+    </script>
+  </head>
+  <body>
+		<div class="gallery-container">
+			<div class="fgl-instance">
+				<a href="content/1.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/1.jpg" />
+				</a>
+				<a href="content/2.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/2.jpg" />
+				</a>
+				<a href="content/3.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/3.jpg" />
+				</a>
+				<a href="content/4.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/4.jpg" />
+				</a>
+				<a href="content/5.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/5.jpg" />
+				</a>
+				<a href="content/12.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/12.jpg" />
+				</a>
+				<a href="content/6.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/6.jpg" />
+				</a>
+				<a href="content/7.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/7.jpg" />
+				</a>
+				<a href="content/8.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/8.jpg" />
+				</a>
+				<a href="content/9.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/9.jpg" />
+				</a>
+				<a href="content/10.png" class="fgl-tile">
+					<img alt="" src="content/thumbs/10.png" />
+				</a>
+				<a href="content/11.jpg" class="fgl-tile">
+					<img alt="" src="content/thumbs/11.jpg" />
+				</a>
+			</div>
+		</div>
+  </body>
+</html>
