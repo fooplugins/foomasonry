@@ -1,4 +1,4 @@
-foogallery-jquery
+foomasonry
 =================
 
-The default layout javascript associated with foogallery
+A masonry clone - foo style!
